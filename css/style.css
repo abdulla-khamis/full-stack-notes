@@ -1,0 +1,48 @@
+body {
+    /*? خصائض لصورة الخلفية  */
+    background-image: url(''); /** url('') & linear-gradient() & radial-gradient() & repeating-linear-gradient() & repeating-radial-gradient() خصائص الصورة */
+    background-size: cover; /** cover & contain & auto حجم الصورة */
+    background-repeat: no-repeat; /** repeat-x & repeat-y & no-repeat تكرار الصورة */
+    background-position: center; /** center & top & bottom & left & right موضع الصوره */
+    background-attachment: fixed; /** fixed & scroll & local  تحريك الصورة    */
+
+    /*? خضائص عامة */
+    float: center; /** بتخلي العنصر البلوك يبقا انلاين */
+    border-style: solid; /** none & dotted & dashed & solid * double شكل الحدود */
+    border-radius: 10%; /** تدوير الحواف بتاعت الحدود */
+    border-width: 1%; /** سمك الحدود */ 
+
+    /*? خصائص الخط */
+    letter-spacing: 10px; /** المسافة بين الحروف */
+    word-spacing: 10px; /** المسافة بين الكلمات */
+    line-height: 1.5; /** المسافة بين السطور */
+    font-size: 16px; /** حجم الخط */
+    font-style: normal; /** normal & italic & oblique شكل الخط */
+    font-weight: normal; /** normal & bold & bolder & lighter سمك الخط */
+    font-family: Arial, Tahoma; /** نوع الخط */
+    text-transform: capitalize; /** capitalize & uppercase & lowercase تحويل النص */
+    text-decoration: none; /** none & underline & overline & line-through & blink خط تحت النص */
+}
+body:hover /*! الهوفر */ 
+body::selection /*! تحديد النص */
+#body /*! ID لو استخدمنا */
+.body /*! class لو استخدمنا */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
