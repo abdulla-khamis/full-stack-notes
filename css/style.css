@@ -1,4 +1,7 @@
-body {
+html{
+    direction: ltr; /** rtl & ltr الموقع من اليمين للشمال او العكس */
+}
+body{
     /*? خصائض لصورة الخلفية  */
     background-image: url(''); /** url('') & linear-gradient() & radial-gradient() & repeating-linear-gradient() & repeating-radial-gradient() خصائص الصورة */
     background-size: cover; /** cover & contain & auto حجم الصورة */
@@ -17,11 +20,20 @@ body {
     word-spacing: 10px; /** المسافة بين الكلمات */
     line-height: 1.5; /** المسافة بين السطور */
     font-size: 16px; /** حجم الخط */
-    font-style: normal; /** normal & italic & oblique شكل الخط */
-    font-weight: normal; /** normal & bold & bolder & lighter سمك الخط */
+    font-style: normal; /** normal & italic & oblique شكل النص */
+    font-weight: normal; /** normal & bold & bolder & lighter سمك النص */
     font-family: Arial, Tahoma; /** نوع الخط */
     text-transform: capitalize; /** capitalize & uppercase & lowercase تحويل النص */
     text-decoration: none; /** none & underline & overline & line-through & blink خط تحت النص */
+    text-align: center; /** موضع النص في المنتص */
+
+    /*? حدود الكونتينر */
+    margin-top: 10px; /** ترك مسافه من فوق الكونتينر */
+    margin-bottom: 10px; /** ترك مسافه من تحت الكونتينر */
+    margin-left: 10px; /** ترك مسافه يسار الكونتينر */
+    margin-right: 10px; /** ترك مسافه يمين الكونتينر */
+    margin: auto; /** موضع الكونتينر اتوماتيك */
+    overflow: auto; /** مهمه لو هتستخدم طفو للكونتينر */
 }
 body:hover /*! الهوفر */ 
 body::selection /*! تحديد النص */
