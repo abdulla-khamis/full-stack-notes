@@ -2,6 +2,15 @@ html{
     direction: ltr; /** rtl & ltr الموقع من اليمين للشمال او العكس */
 }
 body{
+    /*? خصائص عامه */
+    list-style: none; /** li عشان الغي ترقيم الليست */
+    display: inline; /** block & inline-block & inline عشان تغير مكان النصوص */
+
+    /*? خصائص الهيدر */
+    position: fixed; /** عشان تثبت مكان الهيدر */
+    top: 0; /** عشان تخلي الهيدر في اعلي الصفحه */
+    opacity: 0.7; /** شفافيه للديف كامل */
+
     /*? خصائض لصورة الخلفية  */
     background-image: url(''); /** url('') & linear-gradient() & radial-gradient() & repeating-linear-gradient() & repeating-radial-gradient() خصائص الصورة */
     background-size: cover; /** cover & contain & auto حجم الصورة */
@@ -27,14 +36,31 @@ body{
     text-decoration: none; /** none & underline & overline & line-through & blink خط تحت النص */
     text-align: center; /** موضع النص في المنتص */
 
-    /*? حدود الكونتينر */
+    /*? حدود العنصر الخارجية */
     margin-top: 10px; /** ترك مسافه من فوق الكونتينر */
     margin-bottom: 10px; /** ترك مسافه من تحت الكونتينر */
     margin-left: 10px; /** ترك مسافه يسار الكونتينر */
     margin-right: 10px; /** ترك مسافه يمين الكونتينر */
     margin: auto; /** موضع الكونتينر اتوماتيك */
     overflow: auto; /** مهمه لو هتستخدم طفو للكونتينر */
+
+
+    /*? حدود الداخليه للعنصر */
+    padding-left: 10px; /** ترك مسافه دخل العنصر من اليسار */
+    padding-right: 10px; /** ترك مسافه دخل العنصر من اليمين */
+    padding-bottom: 10px; /** ترك مسافه دخل العنصر من الاسفل */
+    padding-top: 10px; /** ترك مسافه دخل العنصر من الاعلي */
+
+
+
 }
+*{ /*? تتحكم في الوقع كانل */
+    margin: 0; /** يبقي مفيش مسافات افتراضيه في الموقع */
+    padding: 0; /** مفيش مشافات داخليه للعنصر افتراضيه */
+    box-sizing: border-box; /** عشان البدادنج يكون ياخد حدود من داخل العنصر فقط */
+    direction: ltr; /** rtl & ltr الموقع من اليمين للشمال او العكس */
+}
+.html body /*! عشان تتحكم في كلاس جوا كلاس */
 body:hover /*! الهوفر */ 
 body::selection /*! تحديد النص */
 #body /*! ID لو استخدمنا */
