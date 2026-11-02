@@ -5,11 +5,12 @@ body{
     /*? خصائص عامه */
     list-style: none; /** li عشان الغي ترقيم الليست */
     display: inline; /** block & inline-block & inline عشان تغير مكان النصوص */
-
-    /*? خصائص الهيدر */
+    display: none; /** عشان تخفي عنصر وتخفي مكانو */
+    position: absolute; /** relative عشان تخلي عنصر فوق عنصر بس مهم تستخدم مع الاب */
     position: fixed; /** عشان تثبت مكان الهيدر */
     top: 0; /** عشان تخلي الهيدر في اعلي الصفحه */
     opacity: 0.7; /** شفافيه للديف كامل */
+    z-index: 20; /** position بتستعملها عشان طبقات الصفحه لما تستخدم */
 
     /*? خصائض لصورة الخلفية  */
     background-image: url(''); /** url('') & linear-gradient() & radial-gradient() & repeating-linear-gradient() & repeating-radial-gradient() خصائص الصورة */
@@ -20,9 +21,13 @@ body{
 
     /*? خضائص عامة */
     float: center; /** بتخلي العنصر البلوك يبقا انلاين */
+    visibility: visible; /** hidden & visible عشان تخفي العنصر او تظهره وبتسيب مكانو محجوز */
     border-style: solid; /** none & dotted & dashed & solid * double شكل الحدود */
     border-radius: 10%; /** تدوير الحواف بتاعت الحدود */
     border-width: 1%; /** سمك الحدود */ 
+    outline: 10px; /** اوتلاين فوق البوردر */
+    outline-offset: 10px; /** المسافه بين البوردر والاوتلاين */
+    outline-color: black; /** لون الاوتلاين */
 
     /*? خصائص الخط */
     letter-spacing: 10px; /** المسافة بين الحروف */
@@ -63,8 +68,11 @@ body{
 .html body /*! عشان تتحكم في كلاس جوا كلاس */
 body:hover /*! الهوفر */ 
 body::selection /*! تحديد النص */
+body li a /*! عشان تشتغل بطريقه Nesting بتحدد العنصر من الاب اللي شايلو */ 
+body:hover h1 /*! عشان تحدد العنصر اللي هتشتغل عليه جوا عنصر */
 #body /*! ID لو استخدمنا */
 .body /*! class لو استخدمنا */
+
 
 
 
